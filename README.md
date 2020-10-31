@@ -9,7 +9,7 @@
 4. Basic understanding of Python Syntax ( Just enough to comment a line !!)
 
 ## Download & Installation
-- ` git clone https://www.github.com/octobersecond/MVP.git `
+- ` git clone https://github.com/octobersecond/MVP.git `
 - That's it !! You're ready to go.
 ***
 ## Email Setup
@@ -22,7 +22,7 @@ We are using Gmail as the mailing service, You are free to choose other services
 
 ### - For Other Mail services
 Contribute to this section by a Pull request.
-
+***
 ## Local Environment Setup [ *optional* ]
 It is entirely optional but Secures the whole process of sending emails and working on the script by Hiding the Credentials as Environment Variables. Read the Note below.
 - Create two Variables - `EMAIL_USER` & `EMAIL_PASS`
@@ -50,7 +50,7 @@ If you haven't followed the section on `Local Environment Setup` change that cod
 EMAIL_ADDRESS = "username@gmail.com"
 EMAIL_PASSWORD = "generatedpassword"
 ```
-- The Python script can send Text message & HTML message. By default it is set to send both, If you are about to send only one of them then comment the other one out. i.e, By typing # before the line 
+- The Python script can send Text message & HTML message. By default it is set to send both, If you are about to send only one of them then comment the other one out. i.e, By typing # before every line shown below. 
 - `for Text Message` 
 ```python3
 with open('resources/message.txt','rb') as t:
@@ -75,7 +75,7 @@ msg.add_alternative(file_string, subtype='html')
 ```bash
 python3 init.py
 ```
-`or`
+or
 ```bash
 python init.py
 ```
