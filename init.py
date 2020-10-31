@@ -33,9 +33,8 @@ while mail_count < len(contacts):
     
     with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
         smtp.login(EMAIL_ADDRESS, EMAIL_PASSWORD) 
-        # smtp.send_message(msg)
-        mail_count += 1
+        smtp.send_message(msg)
         print ("[" + str(mail_count) + "] Mail has been sent to " + contacts[mail_count] )
-        
+        mail_count += 1
         
 
