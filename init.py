@@ -36,5 +36,6 @@ while mail_count < len(contacts):
         smtp.send_message(msg)
         print ("[" + str(mail_count) + "] Mail has been sent to " + contacts[mail_count] )
         mail_count += 1
-        
+
+#test line        
 
